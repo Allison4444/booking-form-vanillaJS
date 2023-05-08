@@ -1,0 +1,17 @@
+.form__time-input {
+  border-radius: 7px;
+  max-width: 80px;
+  border: none;
+  padding: 8px 4px;
+  cursor: pointer;
+}
+
+.form__time-input:focus {
+  outline: 2px solid #0077ff;
+}
+
+@media screen and (max-width:500px) {
+  .form__time-input {
+    padding: 4px;
+  }
+}

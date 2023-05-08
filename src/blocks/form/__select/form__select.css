@@ -1,0 +1,19 @@
+.form__select {
+  border: none;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  cursor: pointer
+}
+
+.form__select:focus {
+  outline: 2px solid #0077ff;
+}
+
+@media screen and (max-width:500px) {
+  .form__select {
+    padding: 5px;
+    font-size: 14px;
+  }
+}

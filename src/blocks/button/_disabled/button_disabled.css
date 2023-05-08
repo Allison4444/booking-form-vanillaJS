@@ -1,0 +1,15 @@
+.button_disabled {
+  color: #c4c4c4;
+  background-color: rgba(0, 119, 225, .4);
+  color: black;
+  transition: opacity 0.3s linear;
+}
+
+.button_disabled:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+
+

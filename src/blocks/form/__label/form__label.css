@@ -1,0 +1,17 @@
+.form__label {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  padding-left: 3px;
+  color: aliceblue;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px)  {
+  .form__label {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,10 @@
+.form__time {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .form__time {
+    margin-top: 10px;
+  }
+}

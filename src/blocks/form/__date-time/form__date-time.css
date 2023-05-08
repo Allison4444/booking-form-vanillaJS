@@ -1,0 +1,11 @@
+.form__date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .form__date-time {
+    flex-direction: column;
+    align-items: center;
+  }
+}

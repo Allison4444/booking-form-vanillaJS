@@ -1,0 +1,18 @@
+.form__textarea {
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  resize: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.form__textarea:focus {
+  outline: 2px solid #0077ff;
+}
+
+@media screen and (max-width: 500px) {
+  .form__textarea {
+    font-size: 14px;
+  }
+}

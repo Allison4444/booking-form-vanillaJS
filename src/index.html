@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="<%=require('./images/favicon.png')%>">
+  <title>Booking Form</title>
+</head>
+
+<body class="page">
+  <h1 class="page__title">Бронирование переговорной комнаты</h1>
+  <form class="form page__form" novalidate>
+    <label class="form__label" for="tower">Выберите здание <span class="form__required">*</span></label>
+    <select class="form__select" id="tower" name="tower" required>
+      <option disabled selected value="">Выбрать</option>
+    </select>
+    <span class="form__error tower-error"></span>
+    <label class="form__label" for="floor">Выберите этаж <span class="form__required">*</span></label>
+    <select class="form__select" id="floor" name="floor" required>
+      <option disabled selected value="">Выбрать</option>
+    </select>
+    <span class="form__error floor-error"></span>
+    <label class="form__label" for="room">Выберите комнату <span class="form__required">*</span></label>
+    <select class="form__select" id="room" name="room" required>
+      <option disabled selected value="">Выбрать</option>
+    </select>
+    <span class="form__error room-error"></span>
+    <label class="form__label" for="date-time">
+      Выберите дату и интервал времени <span class="form__required">*</span>
+    </label>
+    <div class='form__date-time'>
+      <input class="form__date-input" id="date-time" required type="date" name="date" />
+      <div class='form__time'>
+        <label class="form__label" for="start-time">От</label>
+        <input class="form__time-input" id="start-time" required type="time" name="start-time" />
+        <label class="form__label" for="end-time">До</label>
+        <input class="form__time-input" id="end-time" required type="time" name="end-time" />
+      </div>
+    </div>
+    <span class="form__error date-time-error start-time-error end-time-error"></span>
+    <label class="form__label" for="extra-info">Здесь Вы можете оставить свои пожелания</label>
+    <textarea class="form__textarea" name="extra-info" placeholder='Дополнительная информация' id="extra-info" rows="3"
+      minlength="10" maxLength="500"></textarea>
+    <span class="form__error extra-info-error"></span>
+    <div class="form__buttons">
+      <button class="button form__button-submit" type="submit">Отправить</button>
+      <button class="button form__button-reset" type="button">Очистить</button>
+    </div>
+  </form>
+  <div class="popup page__popup-success">
+    <div class="popup__container">
+      <p class="popup__message-info">Ваша форма успешно отправлена!</p>
+      <button class="button">Ок</button>
+    </div>
+  </div>
+</body>
+
+</html>
